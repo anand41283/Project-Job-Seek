@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block mainblock%}
+<div class="d-flex justify-content-evenly">
+    <a href="{% url 'Add_category' %}" class="btn btn-dark w-25">Category</a>
+    <!-- <a href="#" class="btn btn-dark W-25">Jobs</a> -->
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle btn-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Job
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="{% url 'Add_job' %}">Add Job</a></li>
+          <li><a class="dropdown-item" href="{% url 'joblist' %}">View Jobs</a></li>
+          <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+        </ul>
+      </div>    
+    <a href="#" class="btn btn-dark W-25">Applications</a>
+
+</div>
+    {%endblock%}
