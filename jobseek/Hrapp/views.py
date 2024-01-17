@@ -40,9 +40,10 @@ class Jobdelete(View):
         job.objects.get(id=id).delete()
         return redirect("joblist")   
 class JobUpdate(UpdateView):
-    template_name='Jobupdate'
+    template_name='Jobupdate.html'
     form_class=JobAdd
     model=job
+    success_url=reverse_lazy('joblist')
 
 
 

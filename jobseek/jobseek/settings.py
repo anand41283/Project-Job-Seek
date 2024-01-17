@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jobapp',
     'Hrapp',
+    'seekerapp',
 ]
 
 MIDDLEWARE = [
